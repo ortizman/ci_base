@@ -2,7 +2,7 @@ FROM maven:3.8.1-amazoncorretto-11
 
 LABEL maintainer="Manuel Ortiz <ortizman@gmail.com>"
 
-RUN yum install -y unzip wget jq awscli git gcc openssl-devel make
+RUN yum install -y zip unzip wget jq awscli git gcc openssl-devel make
 
 # Instalo la ultima version de cURL
 # para usar la feature --fail-with-body, que permite ver el body de error cuando falla
